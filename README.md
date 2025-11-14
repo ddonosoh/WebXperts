@@ -160,4 +160,6 @@ Además, la configuración está integrada con Vite y soporta reglas específica
 Para usarlo se realiza de la siguiente manera:
 * yarn eslint .
 
-## Link del WebService subido a ...
+## Link del WebService subido a Netlify
+https://webxpertsludo.netlify.app
+

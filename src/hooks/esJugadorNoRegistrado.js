@@ -18,7 +18,7 @@ export default function EsJugadorNoRegistrado() {
     const verificar = async () => {
       try {
         const res = await fetch(
-          `http://localhost:3000/jugadornoregistrados/${userId}`,
+          `https://webxperts-back-252s2-y0rk.onrender.com/jugadornoregistrados/${userId}`,
           {
             headers: {
               "Content-Type": "application/json",

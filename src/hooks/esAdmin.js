@@ -18,7 +18,7 @@ export default function EsAdmin() {
 
     const verificarAdmin = async () => {
       try {
-        const res = await fetch(`http://localhost:3000/admins/${userId}`, {
+        const res = await fetch(`https://webxperts-back-252s2-y0rk.onrender.com/admins/${userId}`, {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${token}`,
