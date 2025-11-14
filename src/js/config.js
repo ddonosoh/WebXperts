@@ -1,4 +1,4 @@
-export const API_URL = "http://localhost:3000"; // URL base de la API (Eventualmente hay que cambiarla por la de Render)
+export const API_URL = "https://webxperts-back-252s2-y0rk.onrender.com"; // URL base de la API (Eventualmente hay que cambiarla por la de Render)
 
 // Función genérica para peticiones con fetch, solo se le pasa el endpoint y options (headers, body, etc)
 export async function fetchData(endpoint, options = {}) {

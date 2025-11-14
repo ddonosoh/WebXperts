@@ -136,7 +136,7 @@ export default function Tablero({ partidaWrapper: partidaWrapperProp }) {
     if (!partida) return;
 
     // Crear la conexión
-    const socket = new WebSocket(`ws://localhost:3000/ws`);
+    const socket = new WebSocket("wss://webxperts-back-252s2-y0rk.onrender.com/ws");
 
     socket.onopen = () => {
       // Unirse a la partida

@@ -104,7 +104,7 @@ El juego mantiene las reglas base de *Ludo*, pero se implementaron algunas adapt
 - Cada jugador tiene una descripción y una imagen (por defecto `avatar.webp` si no se carga una, lo cual está pendiente de implementarse).  
 - Solo usuarios registrados pueden acceder al perfil y estadísticas personales.  
 - Los administradores acceden mediante un login dedicado y no comparten vistas con jugadores.  
-- El frontend asume que la API REST se ejecuta según lo que disponga la variable `API_URL` encontrada en `src/js/config.js`. En caso de pruebas esta se encuentra en `http://localhost:3000`, en el caso de producción se referencia la URL de Render correspondiente.
+- El frontend asume que la API REST se ejecuta según lo que disponga la variable `API_URL` encontrada en `src/js/config.js`. En caso de pruebas esta se encuentra en `http://localhost:3000`, en el caso de producción se referencia la URL de Render correspondiente. En esta misma línea, la variable `socket` reutilizada en `src/components/pages/partida` para los componentes `Matchmaking.jsx` y `Tablero.jsx`se asume, en caso de pruebas igual a `new WebSocket(ws://localhost:3000/ws)`, mientras que para deploy se utiliza `new WebSocket("wss://webxperts-back-252s2-y0rk.onrender.com/ws")`.
 
 ## Documentación de dos Endpoints de Juego
 
@@ -147,8 +147,6 @@ Las cartas robadas se actualizan visualmente cuando se recibe un evento robar_ca
 - yarn install
 - yarn dev
 - La aplicación estará disponible en: http://localhost:5173/
-
-# Readme colaborativo
 
 ## Documentacion EsLint 
 

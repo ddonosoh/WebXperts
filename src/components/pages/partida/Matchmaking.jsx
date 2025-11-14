@@ -25,7 +25,7 @@ export default function Matchmaking() {
   useEffect(() => {
     if (!partidaWrapper) return;
 
-    const ws = new WebSocket("ws://localhost:3000/ws");
+    const ws = new WebSocket("wss://webxperts-back-252s2-y0rk.onrender.com/ws");
     wsRef.current = ws;
 
     // Al abrir la conexión WS, se une a la partida
