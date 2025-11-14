@@ -1,0 +1,104 @@
+.cancelar-partida-container {
+  padding: 120px 8%;
+  min-height: 100vh;
+  background: #ffffffd0;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.cancelar-partida-container h1 {
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 700;
+  color: #4b0082;
+  margin-bottom: 1.8em;
+}
+
+.cancelar-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 2.2em 2.5em;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.cancelar-form label {
+  display: block;
+  margin-top: 1em;
+  font-weight: 600;
+  color: #444;
+  font-size: 1.1em;
+}
+
+.cancelar-form input,
+.cancelar-form textarea {
+  width: 100%;
+  padding: 0.9em 1em;
+  margin-top: 0.4em;
+  border: 2px solid #6a1b9a;
+  border-radius: 10px;
+  font-size: 1em;
+  outline: none;
+  transition: 0.25s;
+}
+
+.cancelar-form input:focus,
+.cancelar-form textarea:focus {
+  border-color: #9b4dff;
+}
+
+.cancelar-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.cancelar-form button {
+  margin-top: 2em;
+  width: 100%;
+  padding: 1em;
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cancelar-form button:hover {
+  background: #9b4dff;
+  transform: scale(1.03);
+}
+
+.cancelar-form button:disabled {
+  background: #bda5d8;
+  cursor: not-allowed;
+}
+
+.error-cancelar,
+.success-cancelar {
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0.8em 1.2em;
+  border-radius: 10px;
+  margin-top: 1.5em;
+  width: max-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-cancelar {
+  background: rgba(255, 200, 200, 0.9);
+  color: #a40000;
+  border-left: 6px solid #d32f2f;
+}
+
+.success-cancelar {
+  background: rgba(209, 231, 221, 0.95);
+  color: #155724;
+  border-left: 6px solid #28a745;
+}

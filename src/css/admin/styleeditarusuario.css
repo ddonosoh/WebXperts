@@ -1,0 +1,140 @@
+.editar-usuario-container {
+  padding: 120px 8%;
+  min-height: 100vh;
+  background: #ffffffd0;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.editar-usuario-container h1 {
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 700;
+  color: #4b0082;
+  margin-bottom: 1.5em;
+}
+
+.editar-form h2 {
+  text-align: center;
+  color: #4b0082;
+  margin-bottom: 1em;
+}
+
+.buscar-box {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.buscar-box input {
+  padding: 0.7em 1em;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 2px solid #6a1b9a;
+  width: 260px;
+  outline: none;
+}
+
+.buscar-box button {
+  background: #6a1b9a;
+  color: white;
+  padding: 0.7em 1.4em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buscar-box button:hover {
+  background: #9b4dff;
+  transform: scale(1.04);
+}
+
+.loading-msg,
+.error-msg,
+.success-msg {
+  display: flex;
+  justify-content: center;
+  margin: 1.2em auto;
+  max-width: 700px;
+  padding: 1em 1.6em;
+  border-radius: 10px;
+  font-size: 1.05em;
+  font-weight: 600;
+}
+
+.loading-msg {
+  background: #eee7ff;
+  color: #4b0082;
+}
+
+.error-msg {
+  background: #ffd3d3;
+  border-left: 6px solid #d32f2f;
+  color: #a40000;
+}
+
+.success-msg {
+  background: #d6f5d6;
+  border-left: 6px solid #28a745;
+  color: #155724;
+}
+
+.editar-form {
+  background: white;
+  padding: 2em;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.editar-form label {
+  display: block;
+  margin-top: 1.2em;
+  font-weight: 600;
+  color: #4b0082;
+}
+
+.editar-form input,
+.editar-form textarea,
+.editar-form select {
+  width: 100%;
+  padding: 0.8em;
+  border-radius: 8px;
+  border: 2px solid #c8a6ff;
+  outline: none;
+  font-size: 1em;
+  margin-top: 0.4em;
+}
+
+.editar-form textarea {
+  height: 90px;
+  resize: none;
+}
+
+.editar-form input:focus,
+.editar-form textarea:focus,
+.editar-form select:focus {
+  border-color: #6a1b9a;
+}
+
+.guardar-btn {
+  width: 100%;
+  margin-top: 2em;
+  padding: 0.9em;
+  background: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.guardar-btn:hover {
+  background: #9b4dff;
+  transform: scale(1.02);
+}

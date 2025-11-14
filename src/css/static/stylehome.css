@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: rgba(255, 200, 120, 0.6);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5em;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+nav a.login {
+  color: #673ab7;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url("../../img/fondo%20tablero.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 850px;
+  box-sizing: border-box;
+}
+
+.overlay h1 {
+  font-size: 3em;
+  font-weight: 900;
+  color: #000;
+  margin-bottom: 0.2em;
+}
+
+.overlay h2 {
+  font-size: 1.8em;
+  color: #222;
+  margin-bottom: 0.8em;
+}
+
+.description {
+  background-color:rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+  font-size: 1.1em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+.logout {
+  background: none;
+  border: none;
+  color: #444;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 0;
+}
+
+.logout:hover {
+  color: #673ab7;
+  text-decoration: underline;
+}
+
+.play, .register {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0.8em 2em;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #b35cff;
+  transition: 0.3s;
+}
+
+.play:hover, .register:hover {
+  background-color: #9a47e3;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.features span {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 992px) {
+  .overlay {
+    width: 95%;
+    padding: 1.5em;
+  }
+
+  .overlay h1 {
+    font-size: 2.4em;
+  }
+
+  .overlay h2 {
+    font-size: 1.5em;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+
+  header {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .overlay h1 {
+    font-size: 1.8em;
+  }
+
+  .overlay h2 {
+    font-size: 1.2em;
+  }
+
+  .description {
+    font-size: 0.95em;
+    padding: 8px 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.7em;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+
+  .features span {
+    font-size: 0.85em;
+  }
+}

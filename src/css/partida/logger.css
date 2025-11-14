@@ -1,0 +1,60 @@
+.logger {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 12px 28px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+  z-index: 500;
+  font-family: "Poppins", sans-serif;
+  min-width: 280px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInOut 2.5s ease forwards;
+}
+
+.turno-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+/* Colores por imperio */
+.turno-text.Azul span {
+  color: #007bff;
+}
+
+.turno-text.Rojo span {
+  color: #dc3545;
+}
+
+.turno-text.Verde span {
+  color: #28a745;
+}
+
+.turno-text.Amarillo span {
+  color: #ffc107;
+}
+
+/* Animación de aparición y salida */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+}

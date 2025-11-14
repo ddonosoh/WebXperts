@@ -1,0 +1,38 @@
+.admin-panel-container {
+  min-height: 100vh;
+  padding: 120px 8%;
+  background: #ffffffd0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.admin-sub {
+  margin-top: -10px;
+  margin-bottom: 40px;
+  color: #666;
+  font-size: 1.1em;
+}
+
+.admin-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.admin-buttons button {
+  background: #651fff;
+  color: white;
+  font-size: 1.1em;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.admin-buttons button:hover {
+  background: #7c4dff;
+  transform: scale(1.03);
+}
